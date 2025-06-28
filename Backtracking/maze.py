@@ -104,9 +104,15 @@ class maze:
         pg.display.flip()
 
     def backtrack_method(self,r_idx,c_idx):
+        # Even handling for quitting the game
+        for event in pg.event.get():
+            if event.type == pg.QUIT:
+                pg.quit()
+                exit()
+        # Base case
         self.board[r_idx][c_idx].STATUS = False
         possible_move:list = list(self.move_possible.keys())
-        for i in range(4):
+        for _ in range(4):
             direction =choice(possible_move)
             koordinate = (self.move_possible[direction][0]+r_idx,self.move_possible[direction][1]+c_idx)
             if not self.validation(*koordinate):
