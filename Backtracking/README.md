@@ -19,8 +19,8 @@ To run this project, you need to have Python installed on your machine. You can 
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/maze-visualization-optimizer.git
-   cd Maze_visualization_Backtracking
+   git clone https://github.com/Rifki987/Maze-Generator-Visualization.git
+   cd Backtracking
    ```
 
 2. Install the required dependencies:
